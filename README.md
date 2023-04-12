@@ -1,2 +1,3 @@
-# my-python-projects
-A collection of the python projects I made in high school -- completed and uncompleted
+# morse code converter
+
+a program which takes a string, and reads it out in morse code
