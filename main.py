@@ -1,29 +1,24 @@
-print("program nummer ett")
-tal1=int(input("vad är det första talet? "))
-tal2=int(input("vad är det andra talet? "))
-print("summan av tal ett och två är", tal1+tal2)
-print("produkten av tal ett och två är", tal1*tal2)
+from turtle import *
+fönster = Screen()
+fönster.bgcolor("blue")
+fönster.setup(width=1000, height=600)
+fönster.tracer(0)
 
-print("program 2.5")
-fråga=str(input("har du en fråga?" ))
-print("Astrid är dum och ful")
+# vågrätt streck
+vs = Turtle()
+vs.shape("square")
+vs.color("yellow")
+vs.shapesize(stretch_wid=5, stretch_len=50)
 
-print("program nummer två")
-basen=int(input("vad är basen i triangeln? "))
-höjden=int(input("vad är höjden i triangeln? "))
-print("triangelns area är:", (basen*höjden)/2)
+# lodrätt streck
+ls = Turtle()
+ls.shape("square")
+ls.color("yellow")
+ls.shapesize(stretch_wid=50, stretch_len=5)
+ls.penup()
+ls.goto(-200,0)
 
-print("program nummer tre (uppgift 3.5")
-tankadvolym=float(input("hur många liter har du tankat?"))
-Prisperliter=200
-print("att betala:",tankadvolym*Prisperliter)
-betalt=int(input("betala!"))
-print("+–––––––––––––––––––––––––––––––––––––+")
-print("|        KVITTO                       |")
-print(f"|   tankad volym {tankadvolym}  liter    |")
-print(f"|   pris per liter 200 kr {Prisperliter}        |")
-print(f"|   betalt kronor {betalt}               |")
-print("|                                       |")
-print("|   Tack för besöktet och               |")
-print("|   välkommen åter!                   |")
-print("+–––––––––––––––––––––––––––––––––––––+")
+# huvudloop
+while True:
+    fönster.update()
+
