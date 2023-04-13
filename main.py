@@ -1,29 +1,33 @@
-print("program nummer ett")
-tal1=int(input("vad är det första talet? "))
-tal2=int(input("vad är det andra talet? "))
-print("summan av tal ett och två är", tal1+tal2)
-print("produkten av tal ett och två är", tal1*tal2)
+from random import *
+# gissa talet
+tal = 14
+# problem, kommer alltid bli 14, men vi vill slumpa fram, kan ha 14 så länge
+gissning = int(input("gissa vilket tal det är: "))
+# så länge denna person inte gissat på rätt tal vill vi ge den ett meddelande
+# så länge det här () villkoret är uppfyllt är vi kvar i loopen
+while (gissning != tal):
+    if (gissning > tal):
+        print("Fel, du gissade för högt! Försök igen: ")
+        gissning = (int(input()))
+    else:
+        print("Fel, du gissade för lågt! Försök igen: ")
+        gissning = (int(input()))
+# om man kommer ur loopen har man ju gissat rätt, så länge man inte gissar 14 är man fast i loopen
+print("Ja, det var rätt!")
+# nu ska vi göra svårare, måste kunna slumpa ett tal
 
-print("program 2.5")
-fråga=str(input("har du en fråga?" ))
-print("Astrid är dum och ful")
+talet = randint(1, 100)
+gissningen = int(input("gissa vilket tal det är: "))
+# så länge denna person inte gissat på rätt tal vill vi ge den ett meddelande
+# så länge det här () villkoret är uppfyllt är vi kvar i loopen
+while (gissningen != talet):
+    if (gissningen > talet):
+        print("Fel, du gissade för högt! Försök igen: ")
+        gissningen = (int(input()))
+    else:
+        print("Fel, du gissade för lågt! Försök igen: ")
+        gissningen = (int(input()))
+# om man kommer ur loopen har man ju gissat rätt, så länge man inte gissar 14 är man fast i loopen
+print("Ja, det var rätt!")
 
-print("program nummer två")
-basen=int(input("vad är basen i triangeln? "))
-höjden=int(input("vad är höjden i triangeln? "))
-print("triangelns area är:", (basen*höjden)/2)
-
-print("program nummer tre (uppgift 3.5")
-tankadvolym=float(input("hur många liter har du tankat?"))
-Prisperliter=200
-print("att betala:",tankadvolym*Prisperliter)
-betalt=int(input("betala!"))
-print("+–––––––––––––––––––––––––––––––––––––+")
-print("|        KVITTO                       |")
-print(f"|   tankad volym {tankadvolym}  liter    |")
-print(f"|   pris per liter 200 kr {Prisperliter}        |")
-print(f"|   betalt kronor {betalt}               |")
-print("|                                       |")
-print("|   Tack för besöktet och               |")
-print("|   välkommen åter!                   |")
-print("+–––––––––––––––––––––––––––––––––––––+")
+# vi använder while för vi vet inte hur länge vi ska vara kvar i loopen
