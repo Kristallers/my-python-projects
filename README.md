@@ -1,5 +1,8 @@
-# my-python-projects
+# Converter into rövarspråk
 
-A collection of the python projects I made in high school -- completed and uncompleted
+Rövarspråk is a Swedish play on languauge. You could compare to pig latin in English.
 
-This one in the main branch is my first python project ever.
+For every consonant in a word, we duplicate it and place an "o" between the two consonants.
+
+For example:  
+Ester = Esostoteror
